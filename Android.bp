@@ -19268,6 +19268,242 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdapparamstorage_v3_6",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdapparamstorage_v3_6.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdeccfg_v3_6",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdeccfg_v3_6.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libqtigef",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libqtigef.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libhwdap_v3_6",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/libhwdap_v3_6.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libaudioutils",
+                "libdapparamstorage_v3_6",
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libswdap_v3_6",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/soundfx/libswdap_v3_6.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libaudioutils",
+                "libdapparamstorage_v3_6",
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    relative_install_path: "soundfx",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.dolby_v3_6.hardware.dms360@2.0-impl",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "libutils",
+                "liblog",
+                "libdapparamstorage_v3_6",
+                "libdlbdsservice_v3_6",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.dolby_v3_6.hardware.dms360@2.0",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.dolby_v3_6.hardware.dms360@2.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libdlbdsservice_v3_6",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdlbdsservice_v3_6.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libstagefright_foundation-v33",
+                "liblog",
+                "libxml2",
+                "libdapparamstorage_v3_6",
+                "libsqlite",
+                "libhidlbase",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdmtp-protos-lite",
     owner: "oneplus",
     strip: {
@@ -20206,6 +20442,47 @@ cc_prebuilt_library_shared {
     },
     compile_multilib: "64",
     prefer: true,
+    device_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "manifest_dax_dolby_v3_6.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/manifest_dax_dolby_v3_6.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.dolby_v3_6.hardware.dms360@2.0-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.dolby_v3_6.hardware.dms360@2.0-service",
+            ],
+            shared_libs: [
+                "liblog",
+                "libutils",
+                "libhidlbase",
+                "libdapparamstorage_v3_6",
+                "libdlbdsservice_v3_6",
+                "vendor.dolby_v3_6.hardware.dms360@2.0",
+                "vendor.dolby_v3_6.hardware.dms360@2.0-impl",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
     device_specific: true,
 }
 
@@ -23453,6 +23730,76 @@ cc_prebuilt_binary {
     },
     prefer: true,
     device_specific: true,
+}
+
+install_symlink {
+    name: "odm_lib_libdapparamstorage_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/libdapparamstorage_v3_6.so",
+    symlink_target: "/odm/etc/libdapparamstorage_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libdeccfg_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/libdeccfg_v3_6.so",
+    symlink_target: "/odm/etc/libdeccfg_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libdlbdsservice_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/libdlbdsservice_v3_6.so",
+    symlink_target: "/odm/etc/libdlbdsservice_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libqtigef_so",
+    device_specific: true,
+    installed_location: "lib/libqtigef.so",
+    symlink_target: "/odm/etc/libqtigef_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libstagefright_soft_ddpdec_so",
+    device_specific: true,
+    installed_location: "lib/libstagefright_soft_ddpdec.so",
+    symlink_target: "/odm/etc/libstagefright_soft_ddpdec_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_libstagefrightdolby_so",
+    device_specific: true,
+    installed_location: "lib/libstagefrightdolby.so",
+    symlink_target: "/odm/etc/libstagefrightdolby_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_soundfx_libhwdap_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/soundfx/libhwdap_v3_6.so",
+    symlink_target: "/odm/etc/soundfx/libhwdap_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_soundfx_libswdap_v3_6_so",
+    device_specific: true,
+    installed_location: "lib/soundfx/libswdap_v3_6.so",
+    symlink_target: "/odm/etc/soundfx/libswdap_v3_6_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0-impl_so",
+    device_specific: true,
+    installed_location: "lib/vendor.dolby_v3_6.hardware.dms360@2.0-impl.so",
+    symlink_target: "/odm/etc/vendor.dolby_v3_6.hardware.dms360@2.0-impl_etc.so",
+}
+
+install_symlink {
+    name: "odm_lib_vendor_dolby_v3_6_hardware_dms360@2_0_so",
+    device_specific: true,
+    installed_location: "lib/vendor.dolby_v3_6.hardware.dms360@2.0.so",
+    symlink_target: "/odm/etc/vendor.dolby_v3_6.hardware.dms360@2.0_etc.so",
 }
 
 install_symlink {
