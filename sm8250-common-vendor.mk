@@ -1722,7 +1722,7 @@ PRODUCT_PACKAGES += \
     libqcodec2_platform \
     libqcodec2_utils \
     libqcodec2_v4l2codec \
-    libqtigef \
+    libqtigef_vendor \
     libwfdcodecv4l2_proprietary \
     libwfdcommonutils_proprietary \
     libwfdconfigutils_proprietary \
